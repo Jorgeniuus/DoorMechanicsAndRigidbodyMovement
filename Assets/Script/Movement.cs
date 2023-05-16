@@ -35,4 +35,4 @@ public class Movement : MonoBehaviour
     {
         playerRigidbody.AddForce(movement.normalized * speed * Time.fixedDeltaTime);
     }
-}//testes
+}
