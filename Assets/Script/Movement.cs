@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private Rigidbody playerRigidbody;
+    public Rigidbody PlayerRigidbody { get => playerRigidbody; }
+    private Rigidbody playerRigidbody;
+
     private float speed = 1000f;
     private Vector3 movement;
 
     private void Start()
     {
-        //movePlayer = GetComponent<Rigidbody>();
+        playerRigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
